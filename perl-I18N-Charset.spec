@@ -9,7 +9,7 @@ Summary:	IANA Character Set Registry names and Unicode::MapUTF8 conversion schem
 Summary(pl):	Nazwy zestawów znaków wg IANA oraz nazwy tabeli konwersji Unicode::MapUTF8
 Name:		perl-I18N-Charset
 Version:	1.23
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -20,7 +20,7 @@ BuildRequires:	perl-IO-String
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Unicode-MapUTF8 >= 1.09
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,7 +48,8 @@ konwersji dokumentu do Unikodu.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -64,5 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%{perl_sitelib}/%{pdir}/*.pm
+%{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
