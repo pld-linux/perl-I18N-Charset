@@ -10,7 +10,8 @@ Summary(pl):	I18N::Charset - nazwy zestawów znaków wg IANA oraz nazwy tabel konw
 Name:		perl-I18N-Charset
 Version:	1.371
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8ae515dea452c64f2820bcead466265f
