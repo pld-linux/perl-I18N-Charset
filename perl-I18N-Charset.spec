@@ -18,7 +18,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-IO-String
 BuildRequires:	perl-Test-Simple
-BuildRequires:	perl-Unicode-Map8 >= 1.09
+BuildRequires:	perl-Unicode-MapUTF8 >= 1.09
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
