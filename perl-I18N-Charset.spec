@@ -8,12 +8,12 @@
 Summary:	IANA Character Set Registry names and Unicode::MapUTF8 conversion scheme names
 Summary(pl):	Nazwy zestawów znaków wg IANA oraz nazwy tabeli konwersji Unicode::MapUTF8
 Name:		perl-I18N-Charset
-Version:	1.23
+Version:	1.24
 Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	63e91fbe5564092ccc5542701ba530c2
+# Source0-md5:	4e370038e7b025df89e5e673de23e3ff
 BuildRequires:	perl-devel >= 5.6
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-File-Which
