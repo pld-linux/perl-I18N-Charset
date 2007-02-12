@@ -6,7 +6,7 @@
 %define		pdir	I18N
 %define		pnam	Charset
 Summary:	I18N::Charset - IANA Character Set Registry names and Unicode::MapUTF8 conversion scheme names
-Summary(pl):	I18N::Charset - nazwy zestawów znaków wg IANA oraz nazwy tabel konwersji Unicode::MapUTF8
+Summary(pl.UTF-8):   I18N::Charset - nazwy zestawÃ³w znakÃ³w wg IANA oraz nazwy tabel konwersji Unicode::MapUTF8
 Name:		perl-I18N-Charset
 Version:	1.375
 Release:	1
@@ -37,14 +37,14 @@ So, for example, if you get an HTML document with a META CHARSET="..."
 tag, you can fairly quickly determine what Unicode::MapXXX module can
 be used to convert it to Unicode.
 
-%description -l pl
-Modu³ I18N::Charset daje dostêp do nazw z IANA Character Set Registry
-(rejestru zestawów znaków IANA) s³u¿±cych do identyfikowania schematów
-kodowania znaków. Udostêpnia tak¿e mapowanie dla nazw zestawów znaków
-u¿ywanych w modu³ach Unicode::Map8 i Unicode::Map.
+%description -l pl.UTF-8
+ModuÅ‚ I18N::Charset daje dostÄ™p do nazw z IANA Character Set Registry
+(rejestru zestawÃ³w znakÃ³w IANA) sÅ‚uÅ¼Ä…cych do identyfikowania schematÃ³w
+kodowania znakÃ³w. UdostÄ™pnia takÅ¼e mapowanie dla nazw zestawÃ³w znakÃ³w
+uÅ¼ywanych w moduÅ‚ach Unicode::Map8 i Unicode::Map.
 
-W ten sposób mo¿na np. maj±c dokument HTML ze znacznikiem META
-CHARSET="..." szybko okre¶liæ, jakiego modu³u Unicode::MapXXX u¿yæ do
+W ten sposÃ³b moÅ¼na np. majÄ…c dokument HTML ze znacznikiem META
+CHARSET="..." szybko okreÅ›liÄ‡, jakiego moduÅ‚u Unicode::MapXXX uÅ¼yÄ‡ do
 konwersji dokumentu do Unikodu.
 
 %prep
