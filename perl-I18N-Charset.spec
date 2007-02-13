@@ -6,7 +6,7 @@
 %define		pdir	I18N
 %define		pnam	Charset
 Summary:	I18N::Charset - IANA Character Set Registry names and Unicode::MapUTF8 conversion scheme names
-Summary(pl.UTF-8):   I18N::Charset - nazwy zestawów znaków wg IANA oraz nazwy tabel konwersji Unicode::MapUTF8
+Summary(pl.UTF-8):	I18N::Charset - nazwy zestawów znaków wg IANA oraz nazwy tabel konwersji Unicode::MapUTF8
 Name:		perl-I18N-Charset
 Version:	1.375
 Release:	1
