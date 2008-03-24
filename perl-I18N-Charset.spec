@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/I18N/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1c98e22788e1ce2b066bdd01c76d4a85
+URL:		http://search.cpan.org/dist/I18N-Charset/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-File-Which
@@ -69,5 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/I18N/*.pm
 %{_mandir}/man3/*
