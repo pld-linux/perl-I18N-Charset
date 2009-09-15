@@ -8,19 +8,21 @@
 Summary:	I18N::Charset - IANA Character Set Registry names and Unicode::MapUTF8 conversion scheme names
 Summary(pl.UTF-8):	I18N::Charset - nazwy zestawów znaków wg IANA oraz nazwy tabel konwersji Unicode::MapUTF8
 Name:		perl-I18N-Charset
-Version:	1.385
+Version:	1.394
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/I18N/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1c98e22788e1ce2b066bdd01c76d4a85
+# Source0-md5:	7b45d8bdf76f1687223b582d74aa6402
 URL:		http://search.cpan.org/dist/I18N-Charset/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-File-Which
 BuildRequires:	perl-IO-Capture
 BuildRequires:	perl-IO-String
+BuildRequires:	perl-Test-Pod
+BuildRequires:	perl-Test-Pod-Coverage
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Unicode-MapUTF8 >= 1.09
 %endif
@@ -30,9 +32,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The I18N::Charset module provides access to the IANA Character Set
-Registry names for identifying character encoding schemes.  It also
-provides a mapping to the character set names used by the Unicode::Map8
-and Unicode::Map modules.
+Registry names for identifying character encoding schemes. It also
+provides a mapping to the character set names used by the
+Unicode::Map8 and Unicode::Map modules.
 
 So, for example, if you get an HTML document with a META CHARSET="..."
 tag, you can fairly quickly determine what Unicode::MapXXX module can
